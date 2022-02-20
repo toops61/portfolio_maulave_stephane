@@ -1,16 +1,23 @@
 body {
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: $secondary-color;
+    background-color: black;
+    color: white;
     &.dark {
         background-color: darken($color: $secondary-color, $amount: 50%);
         color: lighten($color: $secondary-color, $amount: 50%);
     }
 }
 
+#root {
+    height: 100%;
+    @include flexCenter;
+    width: 100%;
+}
+
 ul, li {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
+}
