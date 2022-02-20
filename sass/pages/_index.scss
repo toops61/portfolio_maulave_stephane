@@ -1,0 +1,36 @@
+.blue {
+    background-color: royalblue;
+}
+
+.red {
+    color: salmon;
+}
+
+.green {
+    background-color: seagreen;
+}
+
+.external {
+    color: white;
+}
+
+.binaire {
+    margin: 1rem auto;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    @include flexCenter;
+}
+
+.font-test {
+    border: solid;
+    width: 20rem;
+    height: 20rem;
+    background-color: white;
+    @include flexCenter;
+    &::before {
+        @include icon('\f217',10rem);
+    }
+}
